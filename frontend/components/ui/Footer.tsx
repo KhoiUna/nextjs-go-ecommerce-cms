@@ -38,22 +38,6 @@ export default function Footer({ brandName }: { brandName: string }) {
 							</ul>
 						</div>
 					</div>
-
-					<iframe
-						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F5piecesclothing&tabs=timeline&width=340&height=271&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-						height="100"
-						style={{
-							width: "100%",
-							maxWidth: 400,
-							border: "none",
-							overflow: "hidden",
-							marginTop: "20px",
-						}}
-						scrolling="no"
-						frameBorder="0"
-						allowFullScreen={true}
-						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-					/>
 				</div>
 
 				<div className="sm:flex sm:items-center sm:justify-between pt-10">
