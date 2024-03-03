@@ -53,5 +53,5 @@ func main() {
 
 	router.SetupRoutes(app)
 
-	log.Fatal(app.Listen(":5000"))
+	log.Fatal(app.Listen(":" + os.Getenv("PORT")))
 }
