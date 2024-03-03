@@ -1,0 +1,12 @@
+[Unit]
+Description=store-api
+
+[Service]
+WorkingDirectory=/var/www/{{DOMAIN}}/backend
+Type=simple
+Restart=always
+RestartSec=5s
+ExecStart=/var/www/{{DOMAIN}}/backend/backend
+
+[Install]
+WantedBy=multi-user.target
