@@ -1,6 +1,6 @@
 import Script from "next/script";
 
-const GA_ID = "G-CDNE35JTXE";
+const GA_ID = "";
 
 export default function Analytics() {
 	if (process.env.NODE_ENV !== "production") return <></>;
