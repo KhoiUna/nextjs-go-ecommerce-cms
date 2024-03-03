@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /login/
+Disallow: /dashboard/**
+
+Sitemap: https://5piecesclothing.com/sitemap.xml
