@@ -1,3 +1,4 @@
+import { BRAND_SOCIALS } from "@/app/config";
 import Link from "next/link";
 
 export default function Footer({ brandName }: { brandName: string }) {
@@ -51,7 +52,7 @@ export default function Footer({ brandName }: { brandName: string }) {
 
 					<div className="flex items-center mt-4 space-x-6 sm:justify-center sm:mt-0">
 						<a
-							href="https://www.facebook.com/5piecesclothing"
+							href={BRAND_SOCIALS.facebook}
 							target="_blank"
 							rel="noreferrer"
 							className="text-white"
@@ -71,7 +72,7 @@ export default function Footer({ brandName }: { brandName: string }) {
 						</a>
 
 						<a
-							href="https://www.instagram.com/5piecesclothing/"
+							href={BRAND_SOCIALS.instagram}
 							target="_blank"
 							rel="noreferrer"
 							className="text-white"

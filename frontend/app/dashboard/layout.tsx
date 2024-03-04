@@ -21,7 +21,7 @@ export default function DahboardRootLayout({
 		<QueryClientProvider client={queryClient}>
 			<AppHeaderBar />
 			<div className="min-h-screen bg-secondary px-10 pb-10 pt-32">
-				<Toaster position="top-center" richColors closeButton />
+				<Toaster richColors closeButton />
 				{children}
 			</div>
 		</QueryClientProvider>

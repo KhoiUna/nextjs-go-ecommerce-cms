@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { BRAND_NAME } from "../config";
+import { BRAND_EMAIL, BRAND_NAME } from "../config";
 
 export const metadata: Metadata = {
 	title: `Refund Policy | ${BRAND_NAME}`,
@@ -18,10 +18,10 @@ export default function RefundPolicy() {
 				<p className="text-lg pb-5">
 					Send us an email with any concerns at{" "}
 					<a
-						href="mailto:5piecesclothing123@gmail.com"
+						href={`mailto:${BRAND_EMAIL}`}
 						className="underline font-bold text-blue-700 underline-offset-4"
 					>
-						5piecesclothing123@gmail.com
+						{BRAND_EMAIL}
 					</a>
 				</p>
 			</section>
