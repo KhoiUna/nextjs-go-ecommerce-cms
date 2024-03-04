@@ -348,8 +348,8 @@ export default function PrivacyPolicy() {
 				>
 					{BRAND_EMAIL}
 				</a>
-				. <br /> Our contact information is posted below: <br /> [The
-				FivePieces] <br />{" "}
+				. <br /> Our contact information is posted below:
+				<br />{" "}
 				<a
 					className="underline underline-offset-4 text-blue-600 font-bold"
 					href={`mailto:${BRAND_EMAIL}`}
