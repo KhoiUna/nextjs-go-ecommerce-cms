@@ -38,7 +38,9 @@ func ConnectDB() {
 		panic(migrateErr.Error())
 	}
 
+	// Pre-populate database
 	DB.FirstOrCreate(&model.Site{Image_url: ""})
+	DB.FirstOrCreate(&model.Page{Slug: "preorders", Text: "Pre Orders", Is_Permanent: 1, Order: 1})
 
 	fmt.Println("Database migrated.")
 }
