@@ -273,7 +273,7 @@ export function AddProductForm() {
 				<p className="pb-3 text-red-500 italic font-bold">{message} </p>
 			)}
 			<button
-				className="mt-3 text-lg font-bold bg-black rounded-lg p-2 text-white"
+				className="mt-3 text-lg font-bold bg-primary rounded-lg p-2 text-white"
 				type="submit"
 			>
 				{!isLoading && "Submit"}

@@ -58,7 +58,7 @@ export function EditPage({
 	return (
 		<>
 			<div
-				className="bg-black z-10 opacity-50 fixed w-screen h-screen top-0 left-0 right-0"
+				className="bg-primary z-10 opacity-50 fixed w-screen h-screen top-0 left-0 right-0"
 				onClick={toggleEditPage}
 			/>
 
@@ -112,7 +112,7 @@ export function EditPage({
 						</button>
 						<button
 							type="submit"
-							className="bg-black text-white rounded-lg p-2 font-bold mt-5 w-[80px]"
+							className="bg-primary text-white rounded-lg p-2 font-bold mt-5 w-[80px]"
 						>
 							Save
 						</button>

@@ -115,7 +115,7 @@ export function AddPage({ addPage }: { addPage: (newPage: MenuItem) => void }) {
 				</button>
 				<button
 					type="submit"
-					className="bg-black text-white rounded-lg p-2 font-bold mt-5 w-[80px]"
+					className="bg-primary text-white rounded-lg p-2 font-bold mt-5 w-[80px]"
 				>
 					Add
 				</button>

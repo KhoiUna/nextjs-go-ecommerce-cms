@@ -14,15 +14,15 @@ export default async function Home() {
 				className={`min-h-screen bg-no-repeat bg-center md:bg-fixed bg-scroll landscape:bg-top bg-contain`}
 				style={{ backgroundImage: `url('${backgroundImageUrl}')` }}
 			>
-				<div className="bg-black pt-[25vh] min-h-screen bg-opacity-10">
+				<div className="bg-primary/10 pt-[25vh] min-h-screen bg-opacity-10">
 					<div className="text-center">
-						<h1 className="sm:text-8xl text-5xl text-white bg-black/20 backdrop-blur-lg w-fit m-auto p-2">
+						<h1 className="sm:text-8xl text-5xl text-white bg-primary/20 backdrop-blur-lg w-fit m-auto p-2">
 							{BRAND_NAME}
 						</h1>
 
 						<a
 							href="#new"
-							className="inline-block w-fit sm:text-2xl text-lg font-bold border-white border-2 text-background py-2 px-6 rounded-full cursor-pointer mt-10 transition-all hover:bg-white hover:text-black bg-black/20 backdrop-blur-lg"
+							className="inline-block w-fit sm:text-2xl text-lg font-bold border-white border-2 text-background py-2 px-6 rounded-full cursor-pointer mt-10 transition-all hover:bg-white hover:text-black bg-primary/20 backdrop-blur-lg"
 						>
 							SHOP NOW
 						</a>

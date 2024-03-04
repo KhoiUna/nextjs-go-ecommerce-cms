@@ -364,7 +364,7 @@ export function EditProductForm({ product }: { product: Item }) {
 					</p>
 				)}
 				<button
-					className="mt-3 text-lg font-bold bg-black rounded-lg p-2 text-white"
+					className="mt-3 text-lg font-bold bg-primary rounded-lg p-2 text-white"
 					type="submit"
 				>
 					{!isLoading && "Save"}
@@ -373,7 +373,7 @@ export function EditProductForm({ product }: { product: Item }) {
 			</form>
 
 			<button
-				className="fixed bottom-5 z-10 right-5 bg-black rounded-full p-3 text-white drop-shadow-lg"
+				className="fixed bottom-5 z-10 right-5 bg-primary rounded-full p-3 text-white drop-shadow-lg"
 				type="button"
 				onClick={handleSubmit(onSubmit)}
 			>

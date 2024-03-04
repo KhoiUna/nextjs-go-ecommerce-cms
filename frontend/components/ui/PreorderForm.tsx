@@ -134,7 +134,7 @@ export default function PreorderForm({
 			</div>
 
 			<button
-				className="text-lg font-bold bg-black rounded-lg p-2 text-white"
+				className="text-lg font-bold bg-primary rounded-lg p-2 text-white"
 				type="submit"
 			>
 				{isLoading && <TextLoader loadingText="Loading" />}
