@@ -19,18 +19,18 @@ const MenuSidebar = ({
 			{/* Dark overlay */}
 			<div
 				onClick={() => toggleMenu()}
-				className="cursor-pointer sm:hidden absolute z-10 left-0 top-0 opacity-95 bg-gradient-to-l from-primary to-background w-screen h-screen"
+				className="cursor-pointer md:hidden absolute z-10 left-0 top-0 opacity-95 bg-gradient-to-l from-primary to-background w-screen h-screen"
 			></div>
 
 			{/* Menu sidebar */}
 			<div
-				className={`drop-shadow-xl sm:hidden absolute z-20 top-0 right-0 h-screen w-fit`}
+				className={`drop-shadow-xl md:hidden absolute z-20 top-0 right-0 h-screen w-fit`}
 			>
 				<div className="text-right">
 					<button
 						type="button"
 						aria-label="Close dropdown menu"
-						className={"sm:hidden mr-3 mt-6 text-white"}
+						className={"md:hidden mr-3 mt-6 text-white"}
 						onClick={() => toggleMenu()}
 					>
 						<svg
@@ -52,7 +52,7 @@ const MenuSidebar = ({
 					{navLinks.slice(0, 5).map((item, index) => (
 						<p
 							key={index}
-							className="sm:hidden mx-5 my-8 text-2xl decoration-white text-white font-semibold"
+							className="md:hidden mx-5 my-8 text-2xl decoration-white text-white font-semibold"
 							onClick={() => toggleMenu()}
 						>
 							<NavLink href={`/${item.slug}`} text={item.text} />
@@ -219,7 +219,7 @@ function MobileOthersDropdown({
 
 	if (navLinks.length === 0) return null;
 	return (
-		<div className="sm:hidden mx-5 my-8 text-2xl text-white">
+		<div className="md:hidden mx-5 my-8 text-2xl text-white">
 			<button
 				type="button"
 				className="inline-flex justify-center items-center font-semibold"

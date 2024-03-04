@@ -43,18 +43,18 @@ const MenuSidebar = ({
 			{/* Dark overlay */}
 			<div
 				onClick={() => toggleMenu()}
-				className="cursor-pointer sm:hidden absolute z-10 left-0 top-0 opacity-95 bg-gradient-to-l from-primary to-background w-[100vw] h-[100vh]"
+				className="cursor-pointer md:hidden absolute z-10 left-0 top-0 opacity-95 bg-gradient-to-l from-primary to-background w-[100vw] h-[100vh]"
 			></div>
 
 			{/* Menu sidebar */}
 			<div
-				className={`drop-shadow-xl sm:hidden absolute z-20 top-0 right-0 h-[100vh] w-fit`}
+				className={`drop-shadow-xl md:hidden absolute z-20 top-0 right-0 h-[100vh] w-fit`}
 			>
 				<div className="text-right">
 					<button
 						type="button"
 						aria-label="Close dropdown menu"
-						className={"sm:hidden mr-3 mt-6 text-white"}
+						className={"md:hidden mr-3 mt-6 text-white"}
 						onClick={() => toggleMenu()}
 					>
 						<svg
@@ -76,14 +76,14 @@ const MenuSidebar = ({
 					{NAV_LINKS.map((item, index) => (
 						<p
 							key={index}
-							className="sm:hidden mx-5 my-8 text-2xl decoration-white text-white font-semibold"
+							className="md:hidden mx-5 my-8 text-2xl decoration-white text-white font-semibold"
 							onClick={() => toggleMenu()}
 						>
 							<NavLink href={item.href} text={item.text} />
 						</p>
 					))}
 					<p
-						className="cursor-pointer sm:hidden mx-5 my-8 text-2xl decoration-white text-white font-semibold"
+						className="cursor-pointer md:hidden mx-5 my-8 text-2xl decoration-white text-white font-semibold"
 						onClick={() => logout()}
 					>
 						Logout
