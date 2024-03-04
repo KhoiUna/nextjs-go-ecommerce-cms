@@ -21,7 +21,7 @@ export default function SocialReminder() {
 					rel="noreferrer"
 					className="text-blue-500 underline underline-offset-4 font-bold"
 				>
-					Instargram
+					Instagram
 				</a>{" "}
 				to make payment.
 			</p>
