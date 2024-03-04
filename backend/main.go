@@ -43,7 +43,7 @@ func main() {
 	// Metrics
 	app.Use("/metrics", basicauth.New(basicauth.Config{
 		Users: map[string]string{
-			"admin": "admin123",
+			os.Getenv("METRICS_USERNAME"): os.Getenv("METRICS_PASSWORD"),
 		},
 	}))
 	app.Get("/metrics", monitor.New(monitor.Config{Title: "Backend Metrics"}))
