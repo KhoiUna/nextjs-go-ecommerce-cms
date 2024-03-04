@@ -114,7 +114,7 @@ export default function AppHeaderBar() {
 
 	return (
 		<header
-			className={`fixed z-10 w-full bg-[#191919] bg-opacity-90 backdrop-blur-lg backdrop-filter`}
+			className={`fixed z-10 w-full bg-primary bg-opacity-90 backdrop-blur-lg backdrop-filter`}
 		>
 			<nav
 				className={`flex p-3 items-center justify-between md:justify-around`}
