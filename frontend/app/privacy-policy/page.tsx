@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { BRAND_NAME } from "../config";
+import { BRAND_EMAIL, BRAND_NAME } from "../config";
 
 export const metadata: Metadata = {
 	title: `Privacy Policy | ${BRAND_NAME}`,
@@ -12,17 +12,17 @@ export default function PrivacyPolicy() {
 				<h1 className="pb-8 text-5xl font-bold">Privacy Policy</h1>
 				<strong>OVERVIEW</strong> <br /> This website is operated by
 				{BRAND_NAME}. Throughout the site, the terms “we”, “us” and
-				“our” refer to {BRAND_NAME}. {BRAND_NAME} offers this
-				website, including all information, tools and Services available
-				from this site to you, the user, conditioned upon your
-				acceptance of all terms, conditions, policies and notices stated
-				here. <br /> <br /> By visiting our site and/ or purchasing
-				something from us, you engage in our “Service” and agree to be
-				bound by the following terms and conditions (“Terms of Service”,
-				“Terms”), including those additional terms and conditions and
-				policies referenced herein and/or available by hyperlink. These
-				Terms of Service apply to all users of the site, including
-				without limitation users who are browsers, vendors, customers,
+				“our” refer to {BRAND_NAME}. {BRAND_NAME} offers this website,
+				including all information, tools and Services available from
+				this site to you, the user, conditioned upon your acceptance of
+				all terms, conditions, policies and notices stated here. <br />{" "}
+				<br /> By visiting our site and/ or purchasing something from
+				us, you engage in our “Service” and agree to be bound by the
+				following terms and conditions (“Terms of Service”, “Terms”),
+				including those additional terms and conditions and policies
+				referenced herein and/or available by hyperlink. These Terms of
+				Service apply to all users of the site, including without
+				limitation users who are browsers, vendors, customers,
 				merchants, and/ or contributors of content. <br /> <br /> Please
 				read these Terms of Service carefully before accessing or using
 				our website. By accessing or using any part of the site, you
@@ -264,13 +264,13 @@ export default function PrivacyPolicy() {
 				kind, either express or implied, including all implied
 				warranties or conditions of merchantability, merchantable
 				quality, fitness for a particular purpose, durability, title,
-				and non-infringement. <br /> In no case shall {BRAND_NAME},
-				our directors, officers, employees, affiliates, agents,
-				contractors, interns, suppliers, Service providers or licensors
-				be liable for any injury, loss, claim, or any direct, indirect,
-				incidental, punitive, special, or consequential damages of any
-				kind, including, without limitation lost profits, lost revenue,
-				lost savings, loss of data, replacement costs, or any similar
+				and non-infringement. <br /> In no case shall {BRAND_NAME}, our
+				directors, officers, employees, affiliates, agents, contractors,
+				interns, suppliers, Service providers or licensors be liable for
+				any injury, loss, claim, or any direct, indirect, incidental,
+				punitive, special, or consequential damages of any kind,
+				including, without limitation lost profits, lost revenue, lost
+				savings, loss of data, replacement costs, or any similar
 				damages, whether based in contract, tort (including negligence),
 				strict liability or otherwise, arising from your use of any of
 				the Service or any products procured using the Service, or for
@@ -344,17 +344,17 @@ export default function PrivacyPolicy() {
 				Questions about the Terms of Service should be sent to us at{" "}
 				<a
 					className="underline underline-offset-4 text-blue-600 font-bold"
-					href="mailto:5piecesclothing123@gmail.com"
+					href={`mailto:${BRAND_EMAIL}`}
 				>
-					5piecesclothing123@gmail.com
+					{BRAND_EMAIL}
 				</a>
 				. <br /> Our contact information is posted below: <br /> [The
 				FivePieces] <br />{" "}
 				<a
 					className="underline underline-offset-4 text-blue-600 font-bold"
-					href="mailto:5piecesclothing123@gmail.com"
+					href={`mailto:${BRAND_EMAIL}`}
 				>
-					5piecesclothing123@gmail.com
+					{BRAND_EMAIL}
 				</a>
 			</section>
 		</div>
