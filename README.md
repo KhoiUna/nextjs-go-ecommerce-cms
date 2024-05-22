@@ -31,4 +31,4 @@ Built with Go Fiber, Gorm and SQLite.
 
 ## Production
 
-(work in progress)
+(Please contribute!)
